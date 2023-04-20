@@ -1,0 +1,11 @@
+apiVersion: fleet.cattle.io/v1alpha1
+kind: GitRepo
+metadata:
+  name: wazuh
+  namespace: fleet-local
+spec:
+  repo: https://github.com/walbertosv17/wazuh-fleet.git
+  branch: main
+  paths:
+    - envs/local-env
+  targetNamespace: wazuh
