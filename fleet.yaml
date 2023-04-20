@@ -1,3 +1,4 @@
 namespace: wazuh
-kustomizeDirs:
-  - envs/local-env
+
+kustomize:
+  dir: envs/local-env
